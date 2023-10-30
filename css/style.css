@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#grid{
+    display: grid;
+    grid-template-areas: "header" "main" "footer" ;
+    flex: 1;
+}
+header, main, footer{
+    padding: 0rem;
+}
+
+header{
+    background-color: #002366;
+    grid-area: header;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+}
+header nav ul{
+    list-style: none;
+    display: flex; 
+    justify-content: space-between;
+}
+header nav ul li{
+    margin-right: 20px;
+    font-size: 34px;
+    color: white;
+}
+.fa-solid.fa-user{
+    color: white;
+}
+.fa-solid.fa-heart{
+    color: white;
+}
+.fa-regular.fa-cart-shopping{
+    color: white;
+}
+#bunnIkon{
+    margin: 2px;
+    padding: 0.2rem;
+    color: white;
+    font-size: 34px;
+}
+.bunnDel{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.fa-solid.fa-bars{
+    color: white;
+}
+.fa-solid.fa-magnifying-glass{
+    color: white;
+}
+#searchfg{
+    text-decoration: none;
+    color: white;
+}
+.navigasjon{
+    display: none;
+}
+main{
+    grid-area: main;
+}
+.nyheter{
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+.nyheter h2{
+    font-size: 24px;
+    color: #002366; 
+    text-transform: uppercase;
+    letter-spacing: 4px; 
+    margin-bottom: 20px; 
+}
+
+
+.nyheter img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out; 
+}
+.nyheter img:hover {
+    transform: scale(1.05); 
+}
+.trend{
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+.trend h2{
+    font-size: 24px;
+    color: #002366;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+.trend img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out; 
+}
+.trend img:hover {
+    transform: scale(1.05); 
+}
+.trend p{
+    text-decoration: none;
+    color: #002366;
+    font-size: 20px;
+    justify-content: center;
+}
+footer{
+    background-color: #002366;
+    grid-area: footer;
+}
+.underbar{
+    display: none;
+}
+#aboutUs{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.produkt{
+    text-align: left;
+    margin: 0;
+    padding: 1rem;
+}
+.produkt h3{
+    color: #002366;
+} 
+.produkt h4{
+    color: #002366;
+}
+.produkt img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.btn1{
+    display: inline-block;
+    padding: 0.5rem;
+    text-decoration: none;
+    background-color: #002366;
+    color: white;
+    border-radius: 3px;
+    font-weight: 300;
+    padding: 0.5rem;
+}
+.btn2{
+    display: inline-block;
+    padding: 0.5rem;
+    text-decoration: none;
+    background-color: #002366;
+    color: white;
+    border-radius: 3px;
+    font-weight: 300;
+    padding: 0.5rem;
+}
+.ST{
+    color: #002366;
+    text-align: center;
+    letter-spacing: 2px;
+    
+
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 59vh;
+}
+.loginform{
+    max-width: 200px;
+    font-weight: 700;
+    border-radius: 20px;
+    text-align: center;
+}
+#email{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #002366; 
+}
+#password{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #002366; 
+}
+#login{
+    background-color:#002366;
+    color: #ffffff;
+    border: 2px solid #000000; 
+}
+.trendy{
+    display: none;
+}
+@media only screen and (min-width: 600px){
+    .bunnDel {
+        display: none;
+    }
+    .navigasjon {
+        display: flex;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .man, .kids, .women{
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+    }
+    .trend{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .trend img{
+        width: 70%;
+    }
+    .trendi{
+        display: none;
+    }
+    .trendy{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 4px;
+        background-color: #f2f2f2;
+        color: #002366;
+    }
+    #aboutUs{
+        display: none;
+    }
+    .underbar{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin:  10 auto;
+        padding: 1rem;
+    }
+    .underbar a{
+        text-decoration: none;
+        color: white;
+    } 
+    .produkt{
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+    }
+    .produkt img{
+        max-width: 100%;
+        height: auto;
+    }
+    .produkt h3{
+        text-align: center;
+        font-size: 29px;
+    }
+    .produkt h4{
+        text-align: center;
+    }
+
+    .btn1, .btn2 {
+    display: inline-block; 
+    
+}
+.produkt p{
+    font-size: 20px;
+    text-align: center;
+}
+
+}
