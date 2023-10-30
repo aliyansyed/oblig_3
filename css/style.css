@@ -261,7 +261,6 @@ footer{
         display: flex;
         list-style: none;
         justify-content: space-between;
-        margin:  10 auto;
         padding: 1rem;
     }
     .underbar a{
