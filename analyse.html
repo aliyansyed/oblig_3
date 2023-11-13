@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>SneakerTopia</title>
+</head>
+<body>
+    <div id="grid">
+        <header>
+            <nav>
+                <a id="logo" href="index.html"> 
+                <img src="img/logo.png" alt="logo" width="55" height="55">   
+                </a>
+                <ul>
+                <li><a href="logginn.html"> <i class="fa-solid fa-user"></i></a></li>  
+                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>  
+                </ul>  
+            </nav>
+            <div id="bunnIkon">
+                <div class="bunnDel">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <span>Search</span>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <ul class="navigasjon">
+                <li><a href="produkt.html" class="man">Man</a></li>
+                <li><a href="#" class="women">Women</a></li>
+                <li><a href="#" class="kids">Kids</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="analyse">
+            <h1>ANALYSE</h1>
+            <section class="keyword">
+                <article>
+                    <h3>Nøkkelord</h3>
+                        <p>
+                        nøkkelordene jeg skal ta i bruk er : jordan, jordan i norge, sko, nettbutikk sko, sneakers, populære sko, billige sko, nike sko.
+                        </p>
+                </article>
+                <article>
+                    <h3>Grunnlag for valg</h3>
+                        <p>
+                        hvorfor jeg valgte ut disse spesifike nøkkelordene er på grunn av følgende årsåker. ord som sko og nettbutikk sko, dette skal fungere som generelle søkeord. søkeord som jordan, sneakers og nike sko. skal være kategori og merke basert nøkkelord. disse skal fortelle om hva slags sortement butikken har. det var derfor jeg valgte disse. nøkkelordet jordan i norge valgte jeg på grunnlag av geografiske årsaker. populære sko og billige sko er to nøkkelord som er veldig viktig siden det er de to hoved tingene man ser på når man er på skojakt.
+                        </p>
+                </article>
+            </section>
+            <section class="lighthouse">
+                <img src="img/forsideLs.png" alt="screenshot av lighthouse for forside av sneakertopia ">
+                <h3>forside lighthouse</h3>
+                <img src="img/feil1.png" alt="bilde av diagnosen til perfomance av forsiden">
+                <p>
+                på perfomance fikk jeg 98 i score. diagnosen viser til at noen av bildene på siden ikke har en fastsatt width og height, noen som kan enkelt løses ved å sette max width(noe som jeg har gjort på nyheter bildet, men ikke de under) . og den andre er "Serve static assets with an efficient cache policy". dette betyr at det er litt mer lastetid på nettsiden enn det nødvendigvis trenger å. dette er ikke noe som er helt krise siden lastesiden er forsatt relativt kjapp. dette kan løses, vis jeg implementerer riktig mellomlagringspolitikk. 
+                </p>
+                <img src="img/feil2.png" alt="bilde av accessibility feil av forsiden">
+                <p>
+                på accessibility fikk jeg 92 i score. feil som var her var at "links do not have a discernible name" dette blir referert til de ikonene som er på topp høyre sidet som shopping cart og hjerte(favoritter). dette har noe å gjøre med at de lenkene er tomme og derfor reagerer lighthouse på det. 
+                </p>
+                <p>
+                på best practices er score 100, som man ser i screenshoten over teksten forside lighthouse, dette betyr at ifølge lighouse det er ikke noe rom for forbrederinger.
+                </p>
+                <p>
+                på SEO fikk jeg 90 i score. der står det "document does not have meta description". ganske enkel løsningen for å løse dette, å det er å legge til meta tags.
+                </p>
+                <img src="img/produktLs.png" alt="bilde av lighthouse for produktside av sneakertopia">
+                <h3>produktside lighthouse</h3>
+                <p>er en helt prikklik lighthouse analyse, som den over. med akuratt samme ting lighthouse reagerer på. </p>
+                <img src="img/logginLs.png" alt="bilde av lighthouse for logg inn side for sneakertopia ">
+                <h3>logg inn side lighthouse</h3>
+                <p></p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
