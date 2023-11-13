@@ -40,16 +40,16 @@
             <h1>ANALYSE</h1>
             <section class="keyword">
                 <article>
-                    <h3>Nøkkelord</h3>
-                        <p>
-                        nøkkelordene jeg skal ta i bruk er : jordan, jordan i norge, sko, nettbutikk sko, sneakers, populære sko, billige sko, nike sko.
-                        </p>
+                <h3>Nøkkelord</h3>
+                <p>
+                nøkkelordene jeg skal ta i bruk er : jordan, jordan i norge, sko, nettbutikk sko, sneakers, populære sko, billige sko, nike sko.
+                </p>
                 </article>
                 <article>
-                    <h3>Grunnlag for valg</h3>
-                        <p>
-                        hvorfor jeg valgte ut disse spesifike nøkkelordene er på grunn av følgende årsåker. ord som sko og nettbutikk sko, dette skal fungere som generelle søkeord. søkeord som jordan, sneakers og nike sko. skal være kategori og merke basert nøkkelord. disse skal fortelle om hva slags sortement butikken har. det var derfor jeg valgte disse. nøkkelordet jordan i norge valgte jeg på grunnlag av geografiske årsaker. populære sko og billige sko er to nøkkelord som er veldig viktig siden det er de to hoved tingene man ser på når man er på skojakt.
-                        </p>
+                <h3>Grunnlag for valg</h3>
+                <p>
+                hvorfor jeg valgte ut disse spesifike nøkkelordene er på grunn av følgende årsåker. ord som sko og nettbutikk sko, dette skal fungere som generelle søkeord. søkeord som jordan, sneakers og nike sko. skal være kategori og merke basert nøkkelord. disse skal fortelle om hva slags sortement butikken har. det var derfor jeg valgte disse. nøkkelordet jordan i norge valgte jeg på grunnlag av geografiske årsaker. populære sko og billige sko er to nøkkelord som er veldig viktig siden det er de to hoved tingene man ser på når man er på skojakt.
+                </p>
                 </article>
             </section>
             <section class="lighthouse">
@@ -74,8 +74,65 @@
                 <p>er en helt prikklik lighthouse analyse, som den over. med akuratt samme ting lighthouse reagerer på. </p>
                 <img src="img/logginLs.png" alt="bilde av lighthouse for logg inn side for sneakertopia ">
                 <h3>logg inn side lighthouse</h3>
-                <p></p>
+                <p> den er også helt lik som de andre lighthouse analysene. men bare at her har jeg 100 i perfomance dette er grunnet at det ikke finnes noe bilder på denne siden. i forhold til produktsiden og forsiden. (hadde feil med width og height på skobildene, som nevnt ovenfor)</p>
             </section>
+            <section class="uu">
+                <h3>webaim UU analyse</h3>
+                <img src="img/feil3.png" alt="bilde av webaim UU analyse forside">
+                <p>forside og produkt siden har samme errors og alerts. bare at på produktsiden er det mindre alerts siden det finnes mindre bilder der enn på forsiden. de 5 error som opptsår er på grunn av ikonene mine. det står empty links på alle sammen. dette er på grunn av at de er trykkbare men ikke leder noen steder. siden i oblig 3 skulle man bare ha 3 fungerbare sider. det er en enkel løsning på dette. ved å bare for eksempel oprette html filer som de kan lede til istedenfor bare en # (som jeg bruker nå i html kodem min). i alert delen er det for gjentagende og lang alt tekst for bildene. siden jeg skrev kildene min inn i alt delen delen av koden for img</p>
+                <img src="img/feil4.png" alt="bilde av UU analyse av webaim for logg inn side">
+                <p>på logg inn siden er det samme feil som de andre sidene bare at her får jeg 2 error i tilegg. og disse er for logg inn elementet for epost og passord. kan løse dette ved å endre label koden i html filen</p>
+            </section>
+            <section class="AI">
+                <h3>Chatgpt si konklusjon om SEO og UU</h3>
+                <p>
+                i følge chatgpt kan jeg endre på følgende for å forbrede seo og uu for nettstedet. først og fremst er det mangel på meta tags, noe som kan løses ved å bruke meta tags. den reagerer også på bildeteksten og at den bør være mer meningfull og at den må beksrive innholdet eller formålet med bildet istedenfor kildehenvisning. til sist men ikke minst mener den at jeg bruker overskriftaggene feil, og at jeg burde oprette en mer logisk overskriftsstruktur. når det kommer til UU så mener den at jeg bør titte på fargekontrasten. den legger også merke til ordvalget i logg inn siden der det står klikk her, noe den mener burde byttes ut med oprett ny bruker eller glemt passord. chatgpt legger merker til noe annet på logg inn siden som er skjemamerker i logg inn feltet, den anbefaler bruken av label eller aria attributter.   
+                </p>
+            </section>
+            <!-- fikk hjelp av chatgpt for å oprette tabellen -->
+            <table border="1">
+                <tr>
+                    <th>ChatGPT Resultater</th>
+                    <th>Lighthouse Resultater</th>
+                    <th>WebAIM Resultater</th>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>ChatGPT </h3>
+                        <ul>
+                        <li>mangel på meta tags</li>
+                        <li>reagerer på alt teksten i bildene</li>
+                        <li>overskriftaggene er brukt feil, må forbrede overskriftsstruktur</li>
+                        <li>fargekontrasten på nettsiden</li>
+                        <li>bedre ordvalg på logg in siden</li>
+                        <li>på logg inn siden er det noe feil med logg inn feltet anbefaler bruk av label</li>
+                        </ul>
+                        <h3>likheter</h3>
+                        <p>i likhet med alle andre nevner den mangel på meta tags. den er har samme Resultat som webAaim angåande alt tekster på bildene og noe feil med log inn feltet.</p>
+                    </td>
+                    <td>
+                        <h3>Lighthouse</h3>
+                        <ul>
+                        <li>noen av bildene har ikke fastsatt width og image </li>
+                        <li>"Serve static assets with an efficient cache policy" lighthouse reagerte på dette, noe som går ut lastetiden til nettstedet</li>
+                        <li>reagerer på ikonene (shopping cart og hjerte) men bare på navne til ikonene</li>
+                        <li>mangler meta tags</li>
+                        </ul>
+                        <h3>likheter</h3>
+                        <p>den har samme resulat som de andre to analysene når det kommer til bruka av meta tags. den reagerer på ikonene noe som WebAIM også gjør, men de regerer på grunn av ulike åsrsaker</p>
+                    </td>
+                    <td>
+                        <h3>WebAIM </h3>
+                        <ul>
+                        <li>reagerer på ikonene (shopping cart og hjerte) her reagerer på den på at de ikke tar med deg noe steder, altså empry links</li>
+                        <li>reagerer på alt teksten i bildene mine, for gjentagende og lang alt tekst</li>
+                        <li>reagerer på logg inn elementer på logg inn siden. altså det er noe galt med label koden i html </li>
+                        </ul>
+                        <h3>likheter</h3>
+                        <p>den regerer på ikonen som lighthouse gjør, men den har en annen årsak for det. de begge kom også fram til at alt tekstene på bildene var det noe feil med. den reagerer på samme måte som ChatGpt når det kommer til logg inn elementet på siden</p>
+                    </td>
+                </tr>
+            </table>
         </main>
     </div>
 </body>
