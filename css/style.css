@@ -298,3 +298,10 @@ footer{
     justify-content: center;
     text-align: center;
 }
+#forbrederinger{
+    text-align: left;
+}
+* img{
+    display: flex;
+    max-width: 100%;
+}
