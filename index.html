@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="SneakerTopia - populaer tog billig">
+    <meta property="og:description" content="Finn de mest trendy og billige sneakers for barn, kvinner og menn. bare hos sneakertopia .">
+    <meta property="og:url" content="https://itstud.hiof.no/~aliyans/oblig_3/index.html">
     <meta name="description" content="Finn de mest trendy og billige sneakers for barn, kvinner og menn. bare hos sneakertopia ">
+    <meta name="keywords" content="jordan, jordan i norge, sko, nettbutikk sko, sneakers, populære sko, billige sko, nike sko">
+    <meta name="author" content="aliyan syed">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
@@ -12,9 +17,10 @@
     <title>SneakerTopia</title>
 </head>
 <body>
+    <a href="#hovedinnhold" class="skip-hovedinnold">hopp til hovedinnhold</a>
     <div id="grid">
-        <header>
-            <nav>
+        <header role="banner">
+            <nav role="navigation">
                 <a id="logo" href="index.html"> 
                 <img src="img/logo.png" alt="logo" width="55" height="55">   
                 </a>
@@ -32,13 +38,13 @@
                 </div>
                 <ul class="navigasjon">
                 <li><a href="produkt.html" class="man">Man</a></li>
-                <li><a href="analyse.html" class="women">Women</a></li>
-                <li><a href="#" class="kids">Kids</a></li>
+                <li><a href="#" class="women">Women</a></li>
+                <li><a href="analyse.html" class="kids">analyse</a></li>
                 </ul>
             </div>
         </header>
 
-        <main>
+        <main role="main" id="hovedinnhold">
             <section class="nyheter">
             <h2>NEWS</h2>
             <a href="#"><img src="img/marriage.jpg" alt="bilde av et par som har gifta seg med convverse sko"> </a>
@@ -59,7 +65,7 @@
             </section>
         </main>
 
-        <footer>
+        <footer role="contentinfo">
             <a id="aboutUs" href="#">
             <p>About Us</p>
             </a>
